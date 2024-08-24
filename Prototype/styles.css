@@ -4,6 +4,42 @@ body {
   padding: 0;
 }
 
+/*
+Palette 1: Modern and Minimalist
+Light Mode:
+Background: #F5F5F5 (Light Gray)
+Primary Text: #333333 (Dark Gray)
+Accent: #007BFF (Bright Blue)
+Secondary Accent: #FFC107 (Amber)
+Dark Mode:
+Background: #121212 (Almost Black)
+Primary Text: #E0E0E0 (Light Gray)
+Accent: #90CAF9 (Light Blue)
+Secondary Accent: #FFD54F (Soft Yellow)
+Palette 2: Warm and Inviting
+Light Mode:
+Background: #FFFFFF (White)
+Primary Text: #4E4E4E (Medium Gray)
+Accent: #FF5722 (Vibrant Orange)
+Secondary Accent: #8BC34A (Lime Green)
+Dark Mode:
+Background: #1C1C1C (Dark Charcoal)
+Primary Text: #F5F5F5 (Off White)
+Accent: #FF8A65 (Soft Coral)
+Secondary Accent: #C5E1A5 (Pale Green)
+Palette 3: Cool and Calm
+Light Mode:
+Background: #FAFAFA (Very Light Gray)
+Primary Text: #212121 (Almost Black)
+Accent: #00BCD4 (Cyan)
+Secondary Accent: #9C27B0 (Purple)
+Dark Mode:
+Background: #2C2C2C (Charcoal Gray)
+Primary Text: #ECECEC (Soft White)
+Accent: #4DD0E1 (Soft Cyan)
+Secondary Accent: #BA68C8 (Light Purple)
+*/
+
 header {
   position: fixed;
   top: 0;
@@ -20,6 +56,7 @@ header {
 
 header nav ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 1rem;
 }
@@ -28,6 +65,10 @@ header nav ul a {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
+}
+
+#dark-mode {
+  font-size: 1.5rem;
 }
 
 .hero {
@@ -111,9 +152,23 @@ header nav ul a {
   font-size: 1.2rem;
 }
 .about-us .container {
-  padding: 2rem;
+  padding: 2rem 5rem;
   background-color: #0000009a;
   border-radius: 1rem;
+}
+.socials a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  padding: 1rem 1.1rem;
+  background-color: #000;
+  border-radius: 4rem;
+  margin-left: 12px;
+  margin-right: 12px;
+  transition: all 0.15s ease-in;
+}
+.socials a:hover {
+  background-color: #181818;
 }
 
 footer {

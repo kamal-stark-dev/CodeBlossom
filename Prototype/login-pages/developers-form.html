@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Blossom</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Code Blossom - Developers Portal</h1>
+    </header>
+
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Developer Form</h2>
+        <form action="#" method="POST">
+          <div class="input-group">
+            <label for="devname">Name</label>
+            <input type="text" id="devname" name="devname" required />
+          </div>
+          <div class="input-group">
+            <label for="devmail">Email</label>
+            <input type="devmail" id="devmail" name="devmail" required />
+          </div>
+          <div class="input-group">
+            <label for="grade">Field</label>
+            <select id="grade" name="grade" required>
+              <option value="" disabled selected>Select your field</option>
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="graphic-design">Graphic Design</option>
+              <option value="AI-and-ML">AI-and-ML</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Go to main site - <a href="../index.html">Code Blossom</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -22,7 +22,7 @@ h1 {
   justify-content: center;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 70vh;
   padding: 20px;
   gap: 2rem;
   background-color: #f8f8f8;
@@ -70,4 +70,11 @@ p {
 
 .btn:hover {
   background-color: #c0392b;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }

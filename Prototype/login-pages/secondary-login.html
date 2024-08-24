@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login - Code Blossom</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="./login.html"><i class="ri-arrow-left-s-line"></i> Go back</a>
+      <h1>Code Blossom - Secondary</h1>
+    </header>
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+          <div class="input-group">
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="input-group">
+            <label for="grade">Grade</label>
+            <select id="grade" name="grade" required>
+              <option value="" disabled selected>Select your grade</option>
+              <option value="9th">9th</option>
+              <option value="10th">10th</option>
+              <option value="11th">11th</option>
+              <option value="12th">12th</option>
+            </select>
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

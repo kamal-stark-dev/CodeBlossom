@@ -75,7 +75,7 @@ header nav ul a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   gap: 2rem;
   padding: 2rem;
   height: 100vh;
@@ -98,6 +98,9 @@ header nav ul a {
   color: white;
   background-color: black;
 }
+.hero a:hover {
+  background-color: #222222;
+}
 .hero img {
   height: 500px;
   object-fit: cover;
@@ -106,7 +109,7 @@ header nav ul a {
 .features {
   text-align: center;
   margin: 20px;
-  padding: 5rem 2rem;
+  padding: 10rem 0;
 }
 .feature-card {
   display: inline-block;
@@ -118,6 +121,10 @@ header nav ul a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.feature-card:hover {
+  transform: translateY(-20px);
 }
 .feature-card img {
   width: 50px;
@@ -145,7 +152,7 @@ header nav ul a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
 }
 .about-us p {
   max-width: 900px;

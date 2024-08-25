@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badges | Code Blossom</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Include canvas-confetti script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Code Blossom</h2>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./interactive.html">Interactive</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./badges.html" id="active">Badges</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Your Badges 🏆</h1>
+        <div class="badges">
+          <div class="badge-card">
+            <i class="ri-shield-star-line"></i>
+            <p>10 Quizes with 90% score😁!!</p>
+          </div>
+
+          <div class="badge-card">
+            <i class="ri-medal-line"></i>
+            <p>Completed 3 Major Projects💫!!</p>
+          </div>
+
+          <div class="badge-card">
+            <i class="ri-medal-2-line"></i>
+            <p>Completed 30 days streak🔥!!</p>
+          </div>
+        </div>
+        <br /><br />
+        <p style="text-align: center; font-size: 1.2rem">
+          You are going great keep it up. <br />(by the way have you tried
+          clicking on the badges?)
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="left">
+        <p>&copy; Copyright Code Blossom 2024.</p>
+      </div>
+      <div class="right">
+        <nav>
+          <ul class="socials">
+            <li>
+              <a
+                href="https://www.github.com/kamal-stark-dev/codeblossom/"
+                target="_blank"
+                ><i class="ri-github-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="ri-twitter-x-fill"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Add the JavaScript to trigger confetti -->
+    <script>
+      // Function to launch localized confetti near the clicked icon
+      function launchLocalizedConfetti(x, y) {
+        confetti({
+          particleCount: 50,
+          angle: 60,
+          spread: 55,
+          startVelocity: 20,
+          origin: { x: x, y: y },
+          ticks: 200,
+        });
+        confetti({
+          particleCount: 80,
+          angle: 120,
+          spread: 85,
+          startVelocity: 20,
+          origin: { x: x, y: y },
+          ticks: 200,
+        });
+      }
+
+      // Add event listeners only to <i> tags inside .badge-card elements
+      document.querySelectorAll(".badge-card").forEach(function (icon) {
+        icon.addEventListener("click", function (event) {
+          // Get the icon's position on the page
+          const rect = event.target.getBoundingClientRect();
+          // Calculate the origin relative to the viewport
+          const x = (rect.left + rect.width / 2) / window.innerWidth;
+          const y = (rect.top + rect.height / 2) / window.innerHeight;
+          // Launch localized confetti near the icon
+          launchLocalizedConfetti(x, y);
+        });
+      });
+    </script>
+  </body>
+</html>

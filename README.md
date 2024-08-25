@@ -2,4 +2,4 @@
 
 by Starky Developers
 
-Prototype - [HERE](./Prototype/index.html)
+Prototype - [HERE](https://kamal-stark-dev.github.io/CodeBlossom/Prototype/index.html)
